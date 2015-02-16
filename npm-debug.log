@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/vagrant/.nvm/v0.10.32/bin/node',
+1 verbose cli   '/home/vagrant/.nvm/v0.10.32/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json mp1_starter@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'bootstrap', null ]
+7 verbose cache add name=undefined spec="bootstrap" args=["bootstrap",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'bootstrap',
+8 verbose parsed url   path: 'bootstrap',
+8 verbose parsed url   href: 'bootstrap' }
+9 silly lockFile 3c71cc99-bootstrap bootstrap
+10 verbose lock bootstrap /home/vagrant/.npm/3c71cc99-bootstrap.lock
+11 silly lockFile 3c71cc99-bootstrap bootstrap
+12 silly lockFile 3c71cc99-bootstrap bootstrap
+13 verbose addNamed [ 'bootstrap', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 2571d98f-bootstrap bootstrap@
+16 verbose lock bootstrap@ /home/vagrant/.npm/2571d98f-bootstrap.lock
+17 silly addNameRange { name: 'bootstrap', range: '*', hasData: false }
+18 verbose request where is /bootstrap
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id ae9f9de21b4583ca
+21 verbose url raw /bootstrap
+22 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap' ]
+23 verbose url resolved https://registry.npmjs.org/bootstrap
+24 verbose request where is https://registry.npmjs.org/bootstrap
+25 info trying registry request attempt 1 at 23:13:54
+26 http GET https://registry.npmjs.org/bootstrap
+27 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+28 info trying registry request attempt 2 at 23:14:24
+29 http GET https://registry.npmjs.org/bootstrap
+30 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+31 info trying registry request attempt 3 at 23:15:44
+32 http GET https://registry.npmjs.org/bootstrap
+33 silly lockFile 2571d98f-bootstrap bootstrap@
+34 silly lockFile 2571d98f-bootstrap bootstrap@
+35 error network getaddrinfo ENOTFOUND
+35 error network This is most likely not a problem with npm itself
+35 error network and is related to network connectivity.
+35 error network In most cases you are behind a proxy or have bad network settings.
+35 error network
+35 error network If you are behind a proxy, please make sure that the
+35 error network 'proxy' config is set properly.  See: 'npm help config'
+36 error System Linux 3.13.0-45-generic
+37 error command "/home/vagrant/.nvm/v0.10.32/bin/node" "/home/vagrant/.nvm/v0.10.32/bin/npm" "install" "bootstrap"
+38 error cwd /vagrant/mp1
+39 error node -v v0.10.32
+40 error npm -v 1.4.28
+41 error syscall getaddrinfo
+42 error code ENOTFOUND
+43 error errno ENOTFOUND
+44 verbose exit [ 1, true ]
