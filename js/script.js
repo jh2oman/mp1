@@ -14,3 +14,24 @@ function highlightThis(event) {
     alert(this.className);
     this.style.backgroundColor=backgroundColor;
 }
+
+//creating sticky nav bar
+var mn = $(".main-nav");
+
+$(window).scroll(function(){
+	if( $(this).scrollTop() > 0){
+		mn.addClass("main-nav-scrolled");
+	}
+	else{
+		mn.removeClass("main-nav-scrolled");
+	}
+});
+
+$(window).scroll(function(){
+	if( $(this).scrollTop() > 600){
+		mn.addClass("main-nav-scrolled-past");
+	}
+	else{
+		mn.removeClass("main-nav-scrolled-past");
+	}
+});
