@@ -2,59 +2,93 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 4.2rem;
+
   //color: lighten($orange, 25);
 }
 header{
-	background:url("https://farm8.staticflickr.com/7437/16348353847_fe2c8c3b8f_o.jpg");
+	background:url("/cover.png");
 	background-size:cover;
-    background-position:50% 25%;
+    background-position:top left;
     background-attachment:fixed;
-	height: 500px;
-	padding-top:100px;
+	height:250px;
+	margin-top:-50px;
+	padding-top:250px;
+	text-align:center;
+	color:$off-white;
 
 }
 body{
 	margin:0;
 	padding-top:0px;
+	font-family:"Lato"
+}
+ul{
+	float:left;
+	margin-top:0px;
+	transition: margin-top 1s;
+}
 
+li{
+	display:inline;
+	padding-right:50px;
+	padding-left:50px;
+
+	
+
+}
+a:link{
+	color:$off-white;
 }
 
 
-.main-nav,
-.main{
-	position: relative;
-
+.logo{
+	margin-top:-10px;
+	float:left;
+	padding-right:30px;
+	padding-left:10px;
+	transition: margin-top 1s;
 }
-
+.logo img{
+	height:50px;
+	transition: height 1s;
+}
 .main-nav{
 	position:fixed;
 	top:0;
 	width:100%;
-	background:rgba(0,0,0,0);
-	height:45px;
+	background:#003366;
+	height:55px;
 	z-index:150;
 	margin-bottom:-45px;
 	box-shadow:0 2px 3px rgba(0,0,0,.4);
 	text-align:center;
 	font-size:1.5rem;
-	padding-top:20px;
+	padding-top:25px;
+	transition: height 1s, padding-top 1s, font-size 1s;
 }
-.main-nav-scrolled,
+
+.main-nav-scrolled
 
 {
 	position:fixed;
 	top:0;
 	width:100%;
+	height:20px;
+    padding-top:15px;
+    font-size:1rem;
+}
+.main-nav-scrolled ul{
+	margin-top:-7px;
+}
+.logo-scrolled{
+	margin-top:-16px;
+}
+.logo-scrolled img{
+	height:35px;
 }
 
-.main-nav-scrolled-past,
-{
-	background:$off-white;
-	position:fixed;
-	top:0;
-	width:100%;
-}
+
 .test {
   font-size: 1.2rem;
   color: $blue;

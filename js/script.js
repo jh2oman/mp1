@@ -17,21 +17,15 @@ function highlightThis(event) {
 
 //creating sticky nav bar
 var mn = $(".main-nav");
-
+var logo= $(".logo");
 $(window).scroll(function(){
-	if( $(this).scrollTop() > 0){
+	if( $(this).scrollTop() > 400){
 		mn.addClass("main-nav-scrolled");
+    logo.addClass("logo-scrolled")
 	}
 	else{
 		mn.removeClass("main-nav-scrolled");
+    logo.removeClass("logo-scrolled");
 	}
 });
 
-$(window).scroll(function(){
-	if( $(this).scrollTop() > 600){
-		mn.addClass("main-nav-scrolled-past");
-	}
-	else{
-		mn.removeClass("main-nav-scrolled-past");
-	}
-});
