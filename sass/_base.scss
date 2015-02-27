@@ -18,7 +18,8 @@ h3{
 display: inline-block;
 text-decoration:none;
 }
-a:visited{
+.main-nav a:visited,
+.footer a:visited{
 background: $off-white;
 color:$off-white;
 }
@@ -338,5 +339,5 @@ a:link{
 	border: 2px solid #202020;
     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
-    
+
 }
